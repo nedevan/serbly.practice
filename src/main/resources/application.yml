@@ -1,0 +1,25 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  application:
+    name: practice
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/practice
+    username: serbly
+    password: qwerty2411.
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+app:
+  jwt:
+    secret: "someSecretKey"
+    tokenExpiration: 60m
+    refreshTokenExpiration: 120m
+  security:
+    type: db
